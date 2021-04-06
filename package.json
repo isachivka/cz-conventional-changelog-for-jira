@@ -1,6 +1,6 @@
 {
-  "name": "@digitalroute/cz-conventional-changelog-for-jira",
-  "version": "0.0.0-semantically-released",
+  "name": "@isachivka/cz-conventional-changelog-for-jira",
+  "version": "1.0.0",
   "description": "Commitizen adapter following the conventional-changelog format and also asking for JIRA issue.",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,7 @@
   "engines": {
     "node": ">= 10"
   },
-  "author": "Marcus Johansson <polarn@gmail.com>",
+  "author": "Igor Sachivka <isachivka@spbfiller.com>",
   "license": "MIT",
   "dependencies": {
     "boxen": "^5.0.0",

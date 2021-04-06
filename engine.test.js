@@ -325,19 +325,6 @@ describe('defaults', function() {
       questionDefault('body', customOptions({ defaultBody: body }))
     ).to.equal(body);
   });
-  it('defaultIssues default', function() {
-    expect(questionDefault('issues')).to.be.undefined;
-  });
-  it('defaultIssues options', function() {
-    expect(
-      questionDefault(
-        'issues',
-        customOptions({
-          defaultIssues: issues
-        })
-      )
-    ).to.equal(issues);
-  });
 });
 
 describe('filter', function() {
@@ -352,14 +339,6 @@ describe('when', function() {
     expect(
       questionWhen('breaking', {
         isBreaking: true
-      })
-    ).to.be.true);
-  it('issues by default', () =>
-    expect(questionWhen('issues', {})).to.be.undefined);
-  it('issues when isIssueAffected', () =>
-    expect(
-      questionWhen('issues', {
-        isIssueAffected: true
       })
     ).to.be.true);
 });
